@@ -1,0 +1,39 @@
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "email": "email@gmail.com"
+}
+
+
+###
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "username": "admin1",
+    "email": "emailupdate@gmail.com"
+}
+
+###
+PUT http://localhost:3000/users/push/enable/5
+Content-Type: application/json
+
+{
+    "device_type": "aklsdja",
+    "notification_token": "klj;lkyuawerio"
+}
+###
+GET http://localhost:3000/users/push/notifications
+
+###
+
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "admin"
+}
